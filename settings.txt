@@ -1,54 +1,199 @@
-You will need to fill out this file for hand in. 
-
-The bellow is just an example, feel free to disregard this documents contents.
-
-
-Your final settings.txt will look something like this when you are finished:
-
 /////////////////////////////////
 
 Wallpaper 1:
-
-//your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+var ringNum = 4;
+var sunWidth = 50;
+var Minisun1Position = 40;
+var Minisun1length = 20;
+var Minisun2Position = 160;
+let centerCircle = 160;
+let backGround =204; 
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); 
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 50;
 }
 
 /////////////////////////////////
 
 Wallpaper 2:
-
-//your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+var ringNum = 2;
+var sunWidth = 60;
+var Minisun1Position = 90;
+var Minisun1length = 20;
+var Minisun2Position = 110;
+let centerCircle = 100;
+let backGround = 80;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false);
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 210;
+  pWallpaper.grid_settings.row_offset  = 50;
 }
+
+/////////////////////////////////
+
+Wallpaper 3: 
+var ringNum = 0;
+var sunWidth = 60;
+var Minisun1Position = 100;
+var Minisun1length = 9;
+var Minisun2Position = 120;
+let centerCircle = 200;
+let backGround = 240;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); 
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 120;
+  pWallpaper.grid_settings.row_offset  = 50;
+} 
+
+/////////////////////////////////
+
+Wallpaper 4: 
+var ringNum = 3;
+var sunWidth = 198;
+var Minisun1Position = 12;
+var Minisun1length = 20;
+var Minisun2Position = 12;
+let centerCircle = 100;
+let backGround = 200;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); 
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 160;
+  pWallpaper.grid_settings.cell_height = 50;
+  pWallpaper.grid_settings.row_offset  = 80;
+}
+
+/////////////////////////////////
+
+Wallpaper 5: 
+var ringNum = 2;
+var sunWidth = 108;
+var Minisun1Position = 35;
+var Minisun1length = 20;
+var Minisun2Position = 165;
+let centerCircle = 108;
+let backGround = 0;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); 
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 160;
+  pWallpaper.grid_settings.cell_height = 90;
+  pWallpaper.grid_settings.row_offset  = 90;
+}
+
+/////////////////////////////////
+
+Wallpaper 6: 
+var ringNum = 0;
+var sunWidth = 3;
+var Minisun1Position = 10;
+var Minisun1length = 20;
+var Minisun2Position = 130;
+let centerCircle = 170;
+let backGround = 300;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false);
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 178;
+  pWallpaper.grid_settings.cell_height = 70;
+  pWallpaper.grid_settings.row_offset  = 90;
+}
+
+/////////////////////////////////
+
+Wallpaper 7: 
+var ringNum = 3;
+var sunWidth = 0;
+var Minisun1Position = 0;
+var Minisun1length = 0;
+var Minisun2Position = 0;
+let centerCircle = 0;
+let backGround = 200;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false);
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 180;
+  pWallpaper.grid_settings.cell_height = 90;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+/////////////////////////////////
+
+Wallpaper 8: 
+var ringNum = 1;
+var sunWidth = 6;
+var Minisun1Position = 100;
+var Minisun1length = 140;
+var Minisun2Position = 100;
+let centerCircle = 100;
+let backGround = 300;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false);
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 180;
+  pWallpaper.grid_settings.cell_height = 90;
+  pWallpaper.grid_settings.row_offset  = 15;
+}
+
+/////////////////////////////////
+
+Wallpaper 9: 
+var ringNum = 2;
+var sunWidth = 120;
+var Minisun1Position = 180;
+var Minisun1length = 50;
+var Minisun2Position = 190;
+let centerCircle = 70;
+let backGround = 138;
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER); 
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false);
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 190;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 70;
+}
+
+///////////////////////////////// 
