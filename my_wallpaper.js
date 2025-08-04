@@ -17,49 +17,96 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(240, 255, 240); //light honeydew green colour
+  background(204, 157, 237); //light violet 
 }
-var sunWidth = 190;
-var Minisun1Position = 20;
+var ringNum = 4;
+var sunWidth = 50;
+var Minisun1Position = 40;
 var Minisun1length = 20;
-var Minisun2Position = 170;
+var Minisun2Position = 160;
 var Sunmiddle = 100;
-let centerCircle = 150;
+let centerCircle = 160;
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 //rect(40 ,40, rect_width, rect_height);
-//noStroke();
+noStroke();
 //fill(2000,200,250);
    //body
 //ellipse(100, 100, 50, 40); // draws a circle 45 pixels accross at location 100 pixels accross and 100 pixels down
 //triangle (85,100,50,75,50,125);
-//triangle (90,50,120,110,90,100);
+
+//movement detail behind planet
+//fill(155,72,161,40);
+//triangle(180,50,120,110,90,100);
+//triangle(200,50,120,110,90,100);
+//triangle(0,150,120,110,90,100);
+//triangle(0,160,120,110,90,100);
 
 //arm
  //fill(240,200,250);
  //triangle (90,110,110,110,80,140);
 
- //sun and mini planets
- noStroke();
- fill(240,172,108) //tan orange main circle 
+ //main and mini planets
+ //fill(240,172,108) //yellow centre planet 
+ fill(115, 72, 161)
  ellipse(100,100,sunWidth,50);
+//  noStroke();
+//  fill(247,164,89, 130); //centre planet ring
+ //ellipse(100,100,130,35);
+  push();
+noFill();
+// stroke(247,164,89, 130);
+ stroke(171, 118, 227, 130); 
+ strokeWeight(4);
+  translate(100, 100);
+   rotate(-20)
+ if (ringNum >= 1) {
+  arc(0,0,130,35, -38, 218); //middle ring (in between the two other rings)
+ } 
+ if (ringNum >= 2) {
+  arc(0,0,150,55, -140, 220); //outside ring
+  if (ringNum >= 3) {
+    arc(0,0,115,20, -19, 199); //inside ring
+  }
+ }
 
- noStroke();
- fill(247,184,89); //middle of main circle
- ellipse(Sunmiddle,Sunmiddle,Sunmiddle,30);
+ pop();
  
  noStroke();
- fill(243,178,85);
- ellipse(100,centerCircle,centerCircle,30);
+ fill(189, 142, 222, 170); //bottom shadow
+ ellipse(100,centerCircle,centerCircle,35);
 
  noStroke();
- fill(240,174,80); 
-ellipse(Minisun1Position,70,20,Minisun1length);//top left mini circle
-ellipse(Minisun2Position,130,20,20);//bottom right mini circle
+ fill(240,174,80, 150); 
+ellipse(Minisun1Position,85,20,Minisun1length);//left mini planet
+ellipse(Minisun2Position,115,20,20);//right mini planet
+ellipse(130,35,30,30);//top mini planet
 
-noStroke();
-fill(244,160,85);
-ellipse(70,70,10,10);
-ellipse(130,130,10,10);
+noStroke(); //white specks
+fill(255, 255, 255);
+ellipse(70,70,5,5);
+ellipse(130,123,2,2);
+ellipse(75,74,2,2,);
+ellipse(135,127,5,5);
+
+//light rays/clouds from top left
+fill(212, 171, 255,75);
+ellipse(10,10,15,15);
+ellipse(20,20,20,20);
+ellipse(30,30,30,30);
+ellipse(40,40,40,40);
+ellipse(50,50,50,50);
+//light rays/clouds from bottom right
+ellipse(190,190,15,15);
+ellipse(180,180,20,20);
+ellipse(170,170,30,30);
+ellipse(160,160,40,40);
+ellipse(150,150,50,50);
+
+
+
+
+
+//ellipse(-1,10,30,80);
 
 //clouds
 //noStroke();
