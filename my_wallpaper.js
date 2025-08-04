@@ -1,25 +1,26 @@
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER); 
-  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.resolution(A3);
   pWallpaper.show_guide(false);
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 190;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 70;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
 }
 
 function wallpaper_background() {
   background(backGround, 157, 237); //light violet 
 }
 
-var ringNum = 2;
-var sunWidth = 120;
-var Minisun1Position = 180;
-var Minisun1length = 50;
-var Minisun2Position = 190;
-let centerCircle = 70;
-let backGround = 138;
+var ringNum = 4;
+var sunWidth = 50;
+var Minisun1Position = 40;
+var Minisun1length = 20;
+var Minisun2Position = 160;
+let centerCircle = 160;
+let backGround =204;
+
 function my_symbol() {
 
  //movement detail behind centre planet  
